@@ -22,7 +22,7 @@ def get_binary_from(directory):
 
 def make_boundary(text):
     boundary = ''
-    while boundary == '' or text.find(boundary):
+    while boundary == '' or text.find(boundary) != -1:
         boundary = str(uuid.uuid4())
     return boundary
 
